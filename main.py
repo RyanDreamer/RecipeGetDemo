@@ -7,9 +7,7 @@
 from recipeInfo import getRecipeInfo
 from recipeList import getRecipeList
 
-#list = getRecipeList()
+r_list = getRecipeList()
 
-# for each in list:
-#     getRecipeInfo(each[0])
-
-getRecipeInfo('https://home.meishichina.com/recipe-445118.html')
+for index in list(range(r_list)):
+    getRecipeInfo(r_list[index][0])
